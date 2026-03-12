@@ -1,20 +1,20 @@
 [
-  {
-    "id": "LIB",
-    "name": "Main Library",
-    "allowed": true,
-    "center": [40.7309, -73.9973]
-  },
-  {
-    "id": "SCI",
-    "name": "Science Hall",
-    "allowed": true,
-    "center": [40.7314, -73.9962]
-  },
-  {
-    "id": "ADM",
-    "name": "Administration",
-    "allowed": false,
-    "center": [40.7322, -73.998]
-  }
+	{
+		"id": "LIB",
+		"name": "Main Library",
+		"allowed": true,
+		"center": [40.7309, -73.9973]
+	},
+	{
+		"id": "SCI",
+		"name": "Science Hall",
+		"allowed": true,
+		"center": [40.7314, -73.9962]
+	},
+	{
+		"id": "ADM",
+		"name": "Administration",
+		"allowed": false,
+		"center": [40.7322, -73.998]
+	}
 ]
