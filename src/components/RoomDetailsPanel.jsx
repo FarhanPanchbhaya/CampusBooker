@@ -6,14 +6,6 @@ function formatDateTime(isoDate) {
 	});
 }
 
-function isRoomFreeNow(bookings) {
-	const now = new Date();
-	return !bookings.some((booking) => {
-		const start = new Date(booking.start);
-		const end = new Date(booking.end);
-		return now >= start && now <= end;
-	});
-}
 
 export default function RoomDetailsPanel({ room }) {
 	if (!room) {
@@ -25,7 +17,6 @@ export default function RoomDetailsPanel({ room }) {
 		);
 	}
 
-	const freeNow = isRoomFreeNow(room.bookings ?? []);
 
 	return (
 		<aside className="details-panel">
@@ -44,23 +35,28 @@ export default function RoomDetailsPanel({ room }) {
 				<li>
 					<strong>Food allowed:</strong> {room.foodAllowed ? "Yes" : "No"}
 				</li>
-				<li>
-					<strong>Status now:</strong> {freeNow ? "Free" : "Currently booked"}
-				</li>
 			</ul>
 
-			<h3>Availability schedule</h3>
-			{room.bookings?.length ? (
-				<ul className="schedule-list">
-					{room.bookings.map((booking) => (
-						<li key={`${room.roomId}-${booking.start}`}>
-							{formatDateTime(booking.start)} - {formatDateTime(booking.end)}
-						</li>
-					))}
-				</ul>
-			) : (
-				<p>No current bookings listed.</p>
+			<h3>Email Template</h3>
+			{room.ownerEmail && (
+				<p><strong>Contact:</strong> <a href={`mailto:${room.ownerEmail}`}>{room.ownerEmail}</a></p>
 			)}
+			<p>Copy and fill out this template to request a booking:</p>
+			<pre className="email-template" style={{background:'#f7f7fa',padding:'0.7em',borderRadius:'7px',overflowX:'auto'}}>
+			{room.emailTemplate || `Subject: Room Booking Request – ${room.name}
+
+				Hello,
+
+				I would like to request a booking for the following space:
+				Room: ${room.name} (${room.roomId})
+				Date & Time: [your preferred date/time]
+				Purpose: [brief description]
+
+				Please let me know if the space is available or if you need more information.
+
+				Thank you!
+				[your name]`}
+			</pre>
 		</aside>
 	);
 }
