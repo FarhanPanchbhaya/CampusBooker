@@ -19,7 +19,11 @@ A lightweight site/program that shows York University's easily bookable campus s
 - `src/data/buildings.json`
   - Set `allowed: true/false` to control which buildings appear
 - `src/data/rooms.json`
-  - Update room details, descriptions, images, and `bookings`
+  - Update room details, descriptions, images, and booking contact
+  - Set `roomType` for top filter categories: `Study`, `Event`, `Lab`, `Studio`, `Sport`
+
+
+
 
 ## Run locally
 

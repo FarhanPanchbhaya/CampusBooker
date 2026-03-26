@@ -1,5 +1,6 @@
 export default function RoomDetailsPanel({ room, roomType, onClose }) {
 	if (!room) {
+		// This is unused for now since the panel only opens when a room is selected, but could be good default when no room
 		return (
 			<aside className="details-panel empty">
 				<div className="details-sticky-header">

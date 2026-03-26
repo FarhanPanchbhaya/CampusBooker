@@ -6,13 +6,15 @@ import rooms from "./data/rooms.json";
 import RoomDetailsPanel from "./components/RoomDetailsPanel";
 import "leaflet/dist/leaflet.css";
 
+const BRAND_LOGO_PATH = "dist/assets/logo.png";
+
 const YORK_CAMPUS_CENTER = [43.773161, -79.503109];
 const YORK_CAMPUS_BOUNDS = [
 	[43.7675, -79.512],
 	[43.7788, -79.4955],
 ];
 const MAP_FEATURES = {
-	autoFitToVisibleRooms: true,
+	autoFitToVisibleRooms: true, 
 	campusBoundsAndZoomLimits: true,
 };
 
@@ -23,12 +25,22 @@ const redMarkerIcon = L.divIcon({
 	iconAnchor: [8, 8],
 });
 
+const selectedRedMarkerIcon = L.divIcon({
+	className: "custom-red-marker selected",
+	html: "<span></span>",
+	iconSize: [26, 26],
+	iconAnchor: [13, 13],
+});
+
 function getAllowedBuildingIds() {
 	return new Set(buildings.filter((building) => building.allowed).map((building) => building.id));
 }
 
-function getRoomTypeLabel(roomName) {
-	const name = roomName.toLowerCase();
+function getRoomTypeLabel(room) {
+	if (room.roomType) return room.roomType;
+
+	// if no room type is set, infer from the name
+	const name = room.name.toLowerCase();
 	if (name.includes("lab")) return "Lab";
 	if (name.includes("conference") || name.includes("boardroom")) return "Event";
 	if (name.includes("studio")) return "Studio";
@@ -79,6 +91,7 @@ export default function App() {
 	const [selectedRoom, setSelectedRoom] = useState(null);
 	const [searchText, setSearchText] = useState("");
 	const [activeCategory, setActiveCategory] = useState("All");
+	const [logoError, setLogoError] = useState(false);
 
 	useEffect(() => {
 		const handleEscapeClose = (event) => {
@@ -97,7 +110,7 @@ export default function App() {
 
 	const categoryFilteredRooms = useMemo(() => {
 		if (activeCategory === "All") return visibleRooms;
-		return visibleRooms.filter((room) => getRoomTypeLabel(room.name) === activeCategory);
+		return visibleRooms.filter((room) => getRoomTypeLabel(room) === activeCategory);
 	}, [activeCategory, visibleRooms]);
 
 	const filteredRooms = useMemo(() => {
@@ -120,7 +133,9 @@ export default function App() {
 		<main className="app-shell">
 			<header className="app-topbar">
 				<div className="brand-block">
-					<div className="brand-mark">⌂</div>
+					<div className="brand-mark" aria-hidden="true">
+						{!logoError ? <img src={BRAND_LOGO_PATH} alt="" className="brand-logo" onError={() => setLogoError(true)} /> : "⌂"}
+					</div>
 					<div>
 						<h1>Reactivate York</h1>
 						<p>Keele Campus Space Finder</p>
@@ -149,7 +164,7 @@ export default function App() {
 							const isSelected = selectedRoom?.roomId === room.roomId;
 							return (
 								<button type="button" key={room.roomId} className={`space-row ${isSelected ? "selected" : ""}`} onClick={() => setSelectedRoom(room)}>
-									<div className="space-icon">{getRoomTypeLabel(room.name).slice(0, 1)}</div>
+									<div className="space-icon">{getRoomTypeLabel(room).slice(0, 1)}</div>
 									<div className="space-copy">
 										<strong>{room.name}</strong>
 										<span>
@@ -182,7 +197,8 @@ export default function App() {
 							<Marker
 								key={room.roomId}
 								position={room.position}
-								icon={redMarkerIcon}
+								icon={selectedRoom?.roomId === room.roomId ? selectedRedMarkerIcon : redMarkerIcon}
+								zIndexOffset={selectedRoom?.roomId === room.roomId ? 1000 : 0}
 								eventHandlers={{
 									click: () => setSelectedRoom(room),
 								}}>
@@ -193,7 +209,7 @@ export default function App() {
 
 					{selectedRoom && (
 						<div className="details-overlay">
-							<RoomDetailsPanel room={selectedRoom} roomType={getRoomTypeLabel(selectedRoom.name)} onClose={() => setSelectedRoom(null)} />
+							<RoomDetailsPanel room={selectedRoom} roomType={getRoomTypeLabel(selectedRoom)} onClose={() => setSelectedRoom(null)} />
 						</div>
 					)}
 				</section>

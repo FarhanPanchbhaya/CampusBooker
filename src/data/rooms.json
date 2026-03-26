@@ -2,6 +2,7 @@
 	{
 		"roomId": "SCOTT-201",
 		"buildingId": "SCOTT",
+		"roomType": "Study",
 		"name": "Scott Library Study Room 201",
 		"position": [43.77372, -79.50378],
 		"hours": "08:00AM - 10:00PM",
@@ -15,6 +16,7 @@
 	{
 		"roomId": "SCOTT-305",
 		"buildingId": "SCOTT",
+		"roomType": "Study",
 		"name": "Scott Library Collaboration Room 305",
 		"position": [43.77395, -79.50412],
 		"hours": "09:00-20:00",
@@ -28,6 +30,7 @@
 	{
 		"roomId": "STEACIE-110",
 		"buildingId": "STEACIE",
+		"roomType": "Lab",
 		"name": "Steacie Lab 110",
 		"position": [43.77244, -79.5013],
 		"hours": "07:30-19:00",
@@ -41,6 +44,7 @@
 	{
 		"roomId": "KANEFF-010",
 		"buildingId": "KANEFF",
+		"roomType": "Event",
 		"name": "Kaneff Tower Conference 010",
 		"position": [43.77085, -79.50052],
 		"hours": "08:00-17:00",
