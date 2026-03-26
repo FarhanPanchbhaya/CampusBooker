@@ -21,6 +21,17 @@ A lightweight site/program that shows York University's easily bookable campus s
 - `src/data/rooms.json`
   - Update room details, descriptions, images, and booking contact
   - Set `roomType` for top filter categories: `Study`, `Event`, `Lab`, `Studio`, `Sport`
+  - `otherContactInfo` supports mixed text and links
+
+Example `otherContactInfo` format:
+
+```json
+"otherContactInfo": [
+  { "type": "text", "text": "Bookings require college approval first." },
+  { "type": "link", "label": "Booking Form", "url": "https://example.com/form" },
+  "https://example.com/alternate-link"
+]
+```
 
 
 

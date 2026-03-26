@@ -1,65 +1,179 @@
 [
-	{
-		"roomId": "SCOTT-201",
-		"buildingId": "SCOTT",
-		"roomType": "Study",
-		"name": "Scott Library Study Room 201",
-		"position": [43.77372, -79.50378],
-		"hours": "08:00AM - 10:00PM",
-		"accessibility": ["Wheelchair accessible", "Near elevator"],
-		"foodAllowed": false,
-		"description": "Quiet room with whiteboard and HDMI display.",
-		"imageUrl": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "scott-bookings@yorku.ca",
-		"emailTemplate": "Subject: Booking Request – Scott Library Study Room 201\n\nHello,\n\nI would like to book Scott Library Study Room 201 for [your preferred date/time].\n\nThank you,\n[your name]"
-	},
-	{
-		"roomId": "SCOTT-305",
-		"buildingId": "SCOTT",
-		"roomType": "Study",
-		"name": "Scott Library Collaboration Room 305",
-		"position": [43.77395, -79.50412],
-		"hours": "09:00-20:00",
-		"accessibility": ["Automatic door"],
-		"foodAllowed": true,
-		"description": "Group room with movable tables and large monitor.",
-		"imageUrl": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "scott-collab@yorku.ca",
-		"emailTemplate": "Subject: Booking Request – Scott Library Collaboration Room 305\n\nHello,\n\nI am interested in reserving Collaboration Room 305 for [your preferred date/time] for group work.\n\nBest regards,\n[your name]"
-	},
-	{
-		"roomId": "STEACIE-110",
-		"buildingId": "STEACIE",
-		"roomType": "Lab",
-		"name": "Steacie Lab 110",
-		"position": [43.77244, -79.5013],
-		"hours": "07:30-19:00",
-		"accessibility": ["Wheelchair accessible"],
-		"foodAllowed": false,
-		"description": "Computer lab with 24 seats and projection screen.",
-		"imageUrl": "https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "steacie-labs@yorku.ca",
-		"emailTemplate": "Subject: Booking Request – Steacie Lab 110\n\nHello,\n\nI would like to request Steacie Lab 110 for [your preferred date/time] for a computer lab session.\n\nThank you,\n[your name]"
+	{	
+		"_comment": "================================== Bethune ========================================================================="
 	},
 	{
 		"roomId": "Room 112",
 		"buildingId": "BETHUNE",
 		"roomType": "Lounge",
 		"capacity": 92,
-		"name": "Bethune Lounge Room 112",
+		"name": "Bethune JACS",
 		"position": [43.77298283220886, -79.50905969815224],
 		"hours": "9:00AM-9:00PM",
 		"accessibility": ["Near elevator"],
 		"foodAllowed": true,
-		"description": "Big area filled with couches, pool/pong tables.",
+		"description": "Big lounge area filled with couches, pool/pong tables.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
 		"ownerEmail": "Unavailable",
-		"OtherContactInfo": "https://www.yorku.ca/tuus/reserving-space-equipment-registered-student-organizations/"
+		"otherContactInfo": [
+			{ "type": "text", "text": "Booking handled through TUUS student organization process." },
+			{
+				"type": "link",
+				"label": "TUUS Space and Equipment Info",
+				"url": "https://www.yorku.ca/tuus/reserving-space-equipment-registered-student-organizations/"
+			},
+			{
+				"type": "link",
+				"label": "TUUS Booking Form",
+				"url": "https://tuus.apps01.yorku.ca/machform_py/view.php?id=16918"
+			}
+		]
 
 
 	},
+
 	{
-		"roomId": "Room 101",
+		"roomId": "Room 115",
+		"buildingId": "BETHUNE",
+		"roomType": "Lounge",
+		"capacity": 87,
+		"name": "Bethune JCR",
+		"position": [43.773200, -79.508880],
+		"hours": "9:00AM-9:00PM",
+		"accessibility": ["Near elevator"],
+		"foodAllowed": false,
+		"description": "Open Lounge. Free to walk in or to book for event.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "Unavailable",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Contact Bethune College office for approvals and booking steps." }
+		]
+		
+	},
+
+	{
+		"roomId": "Rooms 105, 105B",
+		"buildingId": "BETHUNE",
+		"roomType": "STUDY",
+		"capacity": "6-10",
+		"name": "Bethune Group Study Rooms",
+		"position": [43.77323920421867, -79.50898991301766],
+		"hours": "9:00AM-9:00PM, 2 hour limit",
+		"accessibility": ["Near elevator"],
+		"foodAllowed": false,
+		"description": "Group study rooms.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "Unavailable",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Bookable by Bethune students through our Self-Service Booking Page :" },
+			{
+				"type": "link",
+				"label": "Bethune Self-Service Booking Page",
+				"url": "https://outlook.office.com/book/BCStudyRooms1@yuoffice.yorku.ca/?ismsaljsauthenabled=true"
+			}
+		]
+	}, 
+
+
+	{
+		"roomId": "Room 105A",
+		"buildingId": "BETHUNE",
+		"roomType": "STUDY",
+		"capacity": "2",
+		"name": "Bethune Piano Practice Room",
+		"position": [43.77330281515474, -79.50920262306862],
+		"hours": "9:00AM-9:00PM, 1 hour limit",
+		"accessibility": ["Near elevator"],
+		"foodAllowed": false,
+		"description": "Piano Practice Room.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "Unavailable",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Bookable by Bethune students through our Self-Service Booking Page :" },
+			{
+				"type": "link",
+				"label": "Bethune Self-Service Booking Page",
+				"url": "https://outlook.office.com/book/BCStudyRooms1@yuoffice.yorku.ca/?ismsaljsauthenabled=true"
+			}
+		]
+	}, 
+
+
+		{
+		"roomId": "Room 203",
+		"buildingId": "BETHUNE",
+		"roomType": "STUDY",
+		"capacity": "40",
+		"name": "Norman's Seminar",
+		"position": [43.77336251515474, -79.50900062306862],
+		"hours": "9:00AM-9:00PM, 1 hour limit",
+		"accessibility": ["Near elevator"],
+		"foodAllowed": false,
+		"description": "Piano Practice Room.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "Unavailable",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Booking handled through TUUS student organization process." },
+			{
+				"type": "link",
+				"label": "TUUS Space and Equipment Info",
+				"url": "https://www.yorku.ca/tuus/reserving-space-equipment-registered-student-organizations/"
+			},
+			{
+				"type": "link",
+				"label": "TUUS Booking Form",
+				"url": "https://tuus.apps01.yorku.ca/machform_py/view.php?id=16918"
+			}
+		]
+	}, 
+
+
+
+
+		{
+		"roomId": "Room 320",
+		"buildingId": "BETHUNE",
+		"roomType": "STUDY",
+		"capacity": "75",
+		"name": "Gallery Lecture Style",
+		"position": [43.77306251515474, -79.50880062306862],
+		"hours": "9:00AM-9:00PM, 1 hour limit",
+		"accessibility": ["Near elevator"],
+		"foodAllowed": false,
+		"description": "Paul Delaney Gallery. Lecture style room.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "Unavailable",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Booking handled through TUUS student organization process." },
+			{
+				"type": "link",
+				"label": "TUUS Space and Equipment Info",
+				"url": "https://www.yorku.ca/tuus/reserving-space-equipment-registered-student-organizations/"
+			},
+			{
+				"type": "link",
+				"label": "TUUS Booking Form",
+				"url": "https://tuus.apps01.yorku.ca/machform_py/view.php?id=16918"
+			}
+		]
+	}, 
+
+
+
+
+
+
+
+
+
+
+
+	{	
+		"_comment": "===================================== Stong ========================================================================="
+	},
+
+	{
+		"roomId": "Room 101/",
 		"buildingId": "STONG",
 		"roomType": "Lab",
 		"capacity": 64,
@@ -68,10 +182,16 @@
 		"hours": "08:00AM-10:00PM",
 		"accessibility": ["Near elevator"],
 		"foodAllowed": true,
-		"description": "Science lab with fume hood and lab benches.",
+		"description": "Workshop Style w/ tables and chairs.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
 		"ownerEmail": "Unavailable",
-		"OtherContactInfo": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+		"otherContactInfo": [
+			{
+				"type": "link",
+				"label": "Stong Workshop Booking Form",
+				"url": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+			}
+		]
 
 	}
 

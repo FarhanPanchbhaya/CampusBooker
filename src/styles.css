@@ -389,6 +389,28 @@ body {
 	text-decoration: none;
 }
 
+.other-contact-info {
+	margin: 0.1rem 0 0.8rem;
+	font-size: 0.95rem;
+}
+
+.other-contact-list {
+	margin: 0.4rem 0 0;
+	padding-left: 1rem;
+	display: grid;
+	gap: 0.3rem;
+}
+
+.other-contact-list a {
+	color: #b51847;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.other-contact-list a:hover {
+	text-decoration: underline;
+}
+
 .email-template {
 	margin: 0;
 	padding: 0.85rem;

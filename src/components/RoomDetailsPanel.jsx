@@ -1,3 +1,55 @@
+function isLikelyUrl(value) {
+	return typeof value === "string" && /^https?:\/\//i.test(value.trim());
+}
+
+function normalizeOtherContactInfo(room) {
+	const raw = room.otherContactInfo ?? room.OtherContactInfo ?? room.other ?? null;
+
+	if (!raw) {
+		return [];
+	}
+
+	if (Array.isArray(raw)) {
+		return raw
+			.map((entry) => {
+				if (!entry) return null;
+
+				if (typeof entry === "string") {
+					return isLikelyUrl(entry)
+						? { kind: "link", label: "Link", url: entry }
+						: { kind: "text", text: entry };
+				}
+
+				if (typeof entry === "object") {
+					if (entry.type === "text" && entry.text) {
+						return { kind: "text", text: entry.text };
+					}
+
+					if (entry.type === "link" && entry.url) {
+						return { kind: "link", label: entry.label || "Link", url: entry.url };
+					}
+
+					if (entry.url) {
+						return { kind: "link", label: entry.label || "Link", url: entry.url };
+					}
+
+					if (entry.text) {
+						return { kind: "text", text: entry.text };
+					}
+				}
+
+				return null;
+			})
+			.filter(Boolean);
+	}
+
+	if (typeof raw === "string") {
+		return isLikelyUrl(raw) ? [{ kind: "link", label: "Link", url: raw }] : [{ kind: "text", text: raw }];
+	}
+
+	return [];
+}
+
 export default function RoomDetailsPanel({ room, roomType, onClose }) {
 	if (!room) {
 		// This is unused for now since the panel only opens when a room is selected, but could be good default when no room
@@ -17,21 +69,9 @@ export default function RoomDetailsPanel({ room, roomType, onClose }) {
 		);
 	}
 
-	const emailTemplate =
-		room.emailTemplate ||
-		`Subject: Room Booking Request - ${room.name}
+	// Removed emailTemplate logic
 
-Hello,
-
-I would like to request a booking for the following space:
-Room: ${room.name} (${room.roomId})
-Date and Time: [your preferred date/time]
-Purpose: [brief description]
-
-Please let me know if the space is available or if you need more information.
-
-Thank you,
-[your name]`;
+	const otherContactEntries = normalizeOtherContactInfo(room);
 
 	return (
 		<aside className="details-panel">
@@ -68,16 +108,25 @@ Thank you,
 						<strong>Email:</strong> <a href={`mailto:${room.ownerEmail}`}>{room.ownerEmail}</a>
 					</p>
 				)}
-				{room.OtherContactInfo && (
-						<p className="other-contact-info">
-							<strong>Other Contact Info:</strong> <a href={room.OtherContactInfo} target="_blank" rel="noopener noreferrer">
-								Link to Booking Form
-							</a>
-						</p>
+				{otherContactEntries.length > 0 && (
+					<div className="other-contact-info">
+						<strong>Other Contact Info:</strong>
+						<ul className="other-contact-list">
+							{otherContactEntries.map((entry, index) => (
+								<li key={`${room.roomId}-other-contact-${index}`}>
+									{entry.kind === "link" ? (
+										<a href={entry.url} target="_blank" rel="noopener noreferrer">
+											{entry.label}
+										</a>
+									) : (
+										<span>{entry.text}</span>
+									)}
+								</li>
+							))}
+						</ul>
+					</div>
 				)}
 
-			
-				<pre className="email-template">{emailTemplate}</pre>
 			</div>
 		</aside>
 	);
