@@ -15,9 +15,7 @@ function normalizeOtherContactInfo(room) {
 				if (!entry) return null;
 
 				if (typeof entry === "string") {
-					return isLikelyUrl(entry)
-						? { kind: "link", label: "Link", url: entry }
-						: { kind: "text", text: entry };
+					return isLikelyUrl(entry) ? { kind: "link", label: "Link", url: entry } : { kind: "text", text: entry };
 				}
 
 				if (typeof entry === "object") {
@@ -127,7 +125,6 @@ export default function RoomDetailsPanel({ room, roomType, onClose }) {
 						</ul>
 					</div>
 				)}
-
 			</div>
 		</aside>
 	);
