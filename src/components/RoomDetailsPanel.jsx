@@ -102,6 +102,7 @@ export default function RoomDetailsPanel({ room, roomType, onClose }) {
 					</li>
 				</ul>
 
+				<div className="booking-separator" />
 				<h3 className="email-title">Booking Contact</h3>
 				{room.ownerEmail && (
 					<p className="email-contact">

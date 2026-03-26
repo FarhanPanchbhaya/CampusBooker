@@ -13,6 +13,13 @@
 	--deep-blue: #2f4fa0;
 }
 
+.booking-separator {
+	border-top: 2px solid var(--brand-red);
+	margin: 1.2rem 0 0.7rem;
+	width: 100%;
+	border-radius: 2px;
+}
+
 * {
 	box-sizing: border-box;
 }
