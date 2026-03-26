@@ -57,6 +57,9 @@ Thank you,
 					<li>
 						<strong>Food allowed:</strong> {room.foodAllowed ? "Yes" : "No"}
 					</li>
+					<li>
+						<strong>Capacity:</strong> {room.capacity ?? "Not listed"}
+					</li>
 				</ul>
 
 				<h3 className="email-title">Booking Contact</h3>
@@ -65,6 +68,15 @@ Thank you,
 						<strong>Email:</strong> <a href={`mailto:${room.ownerEmail}`}>{room.ownerEmail}</a>
 					</p>
 				)}
+				{room.OtherContactInfo && (
+						<p className="other-contact-info">
+							<strong>Other Contact Info:</strong> <a href={room.OtherContactInfo} target="_blank" rel="noopener noreferrer">
+								Link to Booking Form
+							</a>
+						</p>
+				)}
+
+			
 				<pre className="email-template">{emailTemplate}</pre>
 			</div>
 		</aside>

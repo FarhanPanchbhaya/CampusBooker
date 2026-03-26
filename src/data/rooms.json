@@ -42,17 +42,37 @@
 		"emailTemplate": "Subject: Booking Request – Steacie Lab 110\n\nHello,\n\nI would like to request Steacie Lab 110 for [your preferred date/time] for a computer lab session.\n\nThank you,\n[your name]"
 	},
 	{
-		"roomId": "KANEFF-010",
-		"buildingId": "KANEFF",
-		"roomType": "Event",
-		"name": "Kaneff Tower Conference 010",
-		"position": [43.77085, -79.50052],
-		"hours": "08:00-17:00",
-		"accessibility": ["Ramp access"],
+		"roomId": "Room 112",
+		"buildingId": "BETHUNE",
+		"roomType": "Lounge",
+		"capacity": 92,
+		"name": "Bethune Lounge Room 112",
+		"position": [43.77298283220886, -79.50905969815224],
+		"hours": "9:00AM-9:00PM",
+		"accessibility": ["Near elevator"],
 		"foodAllowed": true,
-		"description": "Conference space for administrative use.",
-		"imageUrl": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "kaneff-admin@yorku.ca",
-		"emailTemplate": "Subject: Booking Request – Kaneff Tower Conference 010\n\nHello,\n\nI would like to book Kaneff Tower Conference 010 for [your preferred date/time] for a meeting.\n\nThank you,\n[your name]"
+		"description": "Big area filled with couches, pool/pong tables.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "Unavailable",
+		"OtherContactInfo": "https://www.yorku.ca/tuus/reserving-space-equipment-registered-student-organizations/"
+
+
+	},
+	{
+		"roomId": "Room 101",
+		"buildingId": "STONG",
+		"roomType": "Lab",
+		"capacity": 64,
+		"name": "Stong Workshop Room 101",
+		"position": [43.772738024827824, -79.5087206710825],
+		"hours": "08:00AM-10:00PM",
+		"accessibility": ["Near elevator"],
+		"foodAllowed": true,
+		"description": "Science lab with fume hood and lab benches.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "Unavailable",
+		"OtherContactInfo": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+
 	}
+
 ]

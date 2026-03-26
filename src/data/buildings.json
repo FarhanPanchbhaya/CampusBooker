@@ -1,20 +1,16 @@
 [
+	
 	{
-		"id": "SCOTT",
-		"name": "Scott Library",
+		"id": "BETHUNE",
+		"name": "Bethune College",
 		"allowed": true,
-		"center": [43.7738, -79.5039]
+		"center": [43.772998520567896, -79.50895426521782]
 	},
 	{
-		"id": "STEACIE",
-		"name": "Steacie Science and Engineering Library",
+		"id": "STONG",
+		"name": "Stong College",
 		"allowed": true,
-		"center": [43.7725, -79.5012]
-	},
-	{
-		"id": "KANEFF",
-		"name": "Kaneff Tower",
-		"allowed": false,
-		"center": [43.7709, -79.5004]
+		"center": [43.77275922866155, -79.50875003563763]
 	}
+
 ]

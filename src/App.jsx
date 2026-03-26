@@ -6,13 +6,14 @@ import rooms from "./data/rooms.json";
 import RoomDetailsPanel from "./components/RoomDetailsPanel";
 import "leaflet/dist/leaflet.css";
 
-const BRAND_LOGO_PATH = "dist/assets/logo.png";
+const BRAND_LOGO_PATH = "images/logo.png";
 
 const YORK_CAMPUS_CENTER = [43.773161, -79.503109];
 const YORK_CAMPUS_BOUNDS = [
 	[43.7675, -79.512],
 	[43.7788, -79.4955],
 ];
+
 const MAP_FEATURES = {
 	autoFitToVisibleRooms: true, 
 	campusBoundsAndZoomLimits: true,
