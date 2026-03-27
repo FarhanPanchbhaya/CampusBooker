@@ -15,7 +15,7 @@ const YORK_CAMPUS_BOUNDS = [
 ];
 
 const MAP_FEATURES = {
-	autoFitToVisibleRooms: true, 
+	autoFitToVisibleRooms: true,
 	campusBoundsAndZoomLimits: true,
 };
 
@@ -141,6 +141,16 @@ export default function App() {
 						<h1>Reactivate York</h1>
 						<p>Keele Campus Space Finder</p>
 					</div>
+				</div>
+				<div className="topbar-note" aria-label="Project notice">
+					<p>
+						This site is still a work in progress and spaces are being added. You can suggest a space at <a href="mailto:reactivateyork@gmail.com">reactivateyork@gmail.com </a>
+						or contact us on{" "}
+						<a href="https://www.instagram.com/reactivateyork/" target="_blank" rel="noopener noreferrer">
+							@reactivateyork{" "}
+						</a>
+						.
+					</p>
 				</div>
 				<div className="chip-row">
 					{["All", "Study", "Event", "Lab", "Studio", "Sport"].map((category) => (
