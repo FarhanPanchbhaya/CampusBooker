@@ -14,7 +14,7 @@
 		"foodAllowed": true,
 		"description": "Big lounge area filled with couches, pool/pong tables.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "Unavailable",
+		"ownerEmail": "bethune@yorku.ca",
 		"otherContactInfo": [
 			{ "type": "text", "text": "Booking handled through TUUS student organization process." },
 			{
@@ -44,9 +44,9 @@
 		"foodAllowed": false,
 		"description": "Open Lounge. Free to walk in or to book for event.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "Unavailable",
+		"ownerEmail": "bethune@yorku.ca",
 		"otherContactInfo": [
-			{ "type": "text", "text": "Contact Bethune College office for approvals and booking steps." }
+			{ "type": "text", "text": "Free to walk in or to book for event." }
 		]
 		
 	},
@@ -63,7 +63,7 @@
 		"foodAllowed": false,
 		"description": "Group study rooms.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "Unavailable",
+		"ownerEmail": "bethune@yorku.ca",
 		"otherContactInfo": [
 			{ "type": "text", "text": "Bookable by Bethune students through our Self-Service Booking Page :" },
 			{
@@ -87,7 +87,7 @@
 		"foodAllowed": false,
 		"description": "Piano Practice Room.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "Unavailable",
+		"ownerEmail": "bethune@yorku.ca",
 		"otherContactInfo": [
 			{ "type": "text", "text": "Bookable by Bethune students through our Self-Service Booking Page :" },
 			{
@@ -111,7 +111,7 @@
 		"foodAllowed": false,
 		"description": "Piano Practice Room.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "Unavailable",
+		"ownerEmail": "bethune@yorku.ca",
 		"otherContactInfo": [
 			{ "type": "text", "text": "Booking handled through TUUS student organization process." },
 			{
@@ -142,7 +142,7 @@
 		"foodAllowed": false,
 		"description": "Paul Delaney Gallery. Lecture style room.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "Unavailable",
+		"ownerEmail": "bethune@yorku.ca",
 		"otherContactInfo": [
 			{ "type": "text", "text": "Booking handled through TUUS student organization process." },
 			{
