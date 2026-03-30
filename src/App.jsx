@@ -6,7 +6,7 @@ import rooms from "./data/rooms.json";
 import RoomDetailsPanel from "./components/RoomDetailsPanel";
 import "leaflet/dist/leaflet.css";
 
-const BRAND_LOGO_PATH = "images/logo.png";
+const BRAND_LOGO_PATH = "/logo.png";
 
 const YORK_CAMPUS_CENTER = [43.773161, -79.503109];
 const YORK_CAMPUS_BOUNDS = [
