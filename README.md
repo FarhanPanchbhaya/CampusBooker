@@ -1,12 +1,13 @@
 # Campus Booker
 
-A lightweight site/program that shows York University's easily bookable campus spaces on an interactive map.
+A lightweight site/program that shows York University's easily bookable campus spaces on an interactive map, along with instructions on how to book the space. See the website [here](https://reactivateyork-booker.vercel.app/).
 
 ## Features
 
 - Red map markers for room locations
 - Click marker to view room image/details
 - Description includes hours, accessibility, food policy
+- Booking information including contacts or forms
 
 ## Tech Stack
 
@@ -16,8 +17,6 @@ A lightweight site/program that shows York University's easily bookable campus s
 
 ## JSON
 
-- `src/data/buildings.json`
-  - Set `allowed: true/false` to control which buildings appear
 - `src/data/rooms.json`
   - Update room details, descriptions, images, and booking contact
   - Set `roomType` for top filter categories: `Study`, `Event`, `Lab`, `Studio`, `Sport`
