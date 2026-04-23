@@ -105,6 +105,10 @@ export default function RoomDetailsPanel({ room, roomType, onClose }) {
 				{room.ownerEmail && (
 					<p className="email-contact">
 						<strong>Email:</strong> <a href={`mailto:${room.ownerEmail}`}>{room.ownerEmail}</a>
+						<br />
+						<strong>Template:</strong> <a href="https://docs.google.com/document/d/1auPJOzz7TTJqsqSYF-BdHR70B36nMHEmOoM2JrmjdqE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+							Email Template
+						</a>
 					</p>
 				)}
 				{otherContactEntries.length > 0 && (

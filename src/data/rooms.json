@@ -170,24 +170,266 @@
 	},
 
 	{
-		"roomId": "Room 101/",
+		"roomId": "Room 101",
 		"buildingId": "STONG",
 		"roomType": "Lab",
 		"capacity": 64,
 		"name": "Stong Workshop Room 101",
 		"position": [43.772738024827824, -79.5087206710825],
-		"hours": "08:00AM-10:00PM",
+		"hours": "08:00AM-9:00PM",
 		"accessibility": ["Near elevator"],
 		"foodAllowed": true,
 		"description": "Workshop Style w/ tables and chairs.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "Unavailable",
+		"ownerEmail": "ccsc@yorku.ca",
 		"otherContactInfo": [
 			{
 				"type": "link",
-				"label": "Stong Workshop Booking Form",
+				"label": "Stong Booking Form",
 				"url": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
 			}
+		]
+
+	},
+
+	{
+		"roomId": "Room 118",
+		"buildingId": "STONG",
+		"roomType": "Committee Meeting Room",
+		"capacity": 12,
+		"name": "Stong Workshop Room 118",
+		"position": [43.77270300827219, -79.50906915134937],
+		"hours": "08:00AM-9:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Committtee Meeting w/ long table and chairs.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+			{
+				"type": "link",
+				"label": "Stong Booking Form",
+				"url": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+			}
+		]
+
+	},
+
+
+	{
+		"roomId": "Room 201",
+		"buildingId": "STONG",
+		"roomType": "Lab",
+		"capacity": 18,
+		"name": "Stong Workshop Room 201",
+		"position": [43.77282407402698, -79.50842408509331],
+		"hours": "08:00AM-9:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Workshop Styles  w/ tables chairs, couches, lounge chairs",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+			{
+				"type": "link",
+				"label": "Stong Booking Form",
+				"url": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+			}
+		]
+
+	},
+
+
+	{
+		"roomId": "Room 309",
+		"buildingId": "STONG",
+		"roomType": "Committee Meeting Room",
+		"capacity": "12-15",
+		"name": "Stong Workshop Room 309",
+		"position": [43.77282407402698, -79.5081408509331],
+		"hours": "08:00AM-9:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Committtee Meeting w/ long table and chairs.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+			{
+				"type": "link",
+				"label": "Stong Booking Form",
+				"url": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+			}
+		]
+
+	},
+
+
+
+
+
+	{
+		"roomId": "Room 111/JCR",
+		"buildingId": "STONG",
+		"roomType": "Commons Room",
+		"capacity": "N/A",
+		"name": "Junior Common Room",
+		"position": [43.77272407402698, -79.5081408509331],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Committtee Meeting w/ long table and chairs.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+			{
+				"type": "text", "text": "Free to walk in."
+			}
+		]
+
+	},
+
+
+	{	
+		"_comment": "===================================== Calumet ========================================================================="
+	},
+
+	{
+		"roomId": "Room 214",
+		"buildingId": "CALUMET",
+		"roomType": "Committee Meeting Room",
+		"capacity": "20",
+		"name": "Calumet Room 214",
+		"position": [43.77279403783779, -79.50996230259895],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Committee Meeting Room w/ tables , chairs, 6 couches , 8 lounches).",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+			{
+				"type": "link",
+				"label": "Calumet Booking Form",
+				"url": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+			}
+		]
+
+	},
+
+
+
+	{
+		"roomId": "Junior Common Room",
+		"buildingId": "CALUMET",
+		"roomType": "Commons Room",
+		"capacity": "N/A",
+		"name": "Junior Common Room",
+		"position": [43.772810453522716, -79.50980316731112],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Junior Common Room.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+			{
+				"type": "text", "text": "Free to walk in or book."
+			},
+			{
+				"type": "link",
+				"label": "Calumet Booking Form",
+				"url": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+			}
+		]
+
+	},
+
+
+	{
+		"roomId": "Room 127",
+		"buildingId": "CALUMET",
+		"roomType": "Lounge",
+		"capacity": "N/A",
+		"name": "Calumet Lounge",
+		"position": [43.772810453522716, -79.50980316731112],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Calumet Lounge.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+			{
+				"type": "link",
+				"label": "Calumet Booking Form",
+				"url": "https://health.apps01.yorku.ca/machform/view.php?id=138752"
+			}
+		]
+
+	},
+
+
+
+		{	
+		"_comment": "===================================== New College ========================================================================="
+		},
+
+
+	{
+		"roomId": "New College Courtyard",
+		"buildingId": "NEWCOLLEGE",
+		"roomType": "Lounge",
+		"capacity": "N/A",
+		"name": "New College Courtyard",
+		"position": [43.77076264006865, -79.50206479949122],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "New College Courtyard.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+			{
+				"type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD."
+			}
+		]
+
+	},
+
+	{
+		"roomId": "Atkinson 002",
+		"buildingId": "NEWCOLLEGE",
+		"roomType": "Lounge",
+		"capacity": "N/A",
+		"name": "Atkinson Lounge",
+		"position": [43.77101993818194, -79.50247754585976],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Atkinson Lounge.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+		
+		]
+
+	},
+
+	{
+		"roomId": "Atkinson 107",
+		"buildingId": "NEWCOLLEGE",
+		"roomType": "Lounge",
+		"capacity": "N/A",
+		"name": "The Loft",
+		"position": [43.77136857025657, -79.502544601083],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "The Loft.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "ccsc@yorku.ca",
+		"otherContactInfo": [
+		
 		]
 
 	},
@@ -204,7 +446,14 @@
 
 
 
-	
+
+
+
+
+
+
+
+
 
 
 
@@ -218,6 +467,6 @@
 
 
 		{	
-		"_comment": "===================================== Stong ========================================================================="
+		"_comment": "===================================== idk ========================================================================="
 		}
 ]

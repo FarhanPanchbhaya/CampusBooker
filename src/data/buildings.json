@@ -11,6 +11,17 @@
 		"name": "Stong College",
 		"allowed": true,
 		"center": [43.77275922866155, -79.50875003563763]
+	},
+	{
+		"id": "CALUMET",
+		"name": "Calumet College",
+		"allowed": true,
+		"center": [43.77282276528348, -79.50980032560953]
+	},
+	{
+		"id": "NEWCOLLEGE",
+		"name": "New College",
+		"allowed": true,
+		"center": [43.77104838661764, -79.50249245923226]
 	}
-
 ]

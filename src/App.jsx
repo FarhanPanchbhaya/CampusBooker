@@ -10,8 +10,8 @@ const BRAND_LOGO_PATH = "/logo.png";
 
 const YORK_CAMPUS_CENTER = [43.773161, -79.503109];
 const YORK_CAMPUS_BOUNDS = [
-	[43.7675, -79.512],
-	[43.7788, -79.4955],
+	[43.7657, -79.5154],
+	[43.7824, -79.4892],
 ];
 
 const MAP_FEATURES = {
@@ -144,7 +144,7 @@ export default function App() {
 				</div>
 				<div className="topbar-note" aria-label="Project notice">
 					<p>
-						This site is still a work in progress and spaces are being added. You can suggest a space at <a href="mailto:reactivateyork@gmail.com">reactivateyork@gmail.com </a>
+						Work on this project is ongoing. You can suggest a space or report an issue at <a href="mailto:reactivateyork@gmail.com">reactivateyork@gmail.com </a>
 						or contact us on{" "}
 						<a href="https://www.instagram.com/reactivateyork/" target="_blank" rel="noopener noreferrer">
 							@reactivateyork{" "}
@@ -175,7 +175,7 @@ export default function App() {
 							const isSelected = selectedRoom?.roomId === room.roomId;
 							return (
 								<button type="button" key={room.roomId} className={`space-row ${isSelected ? "selected" : ""}`} onClick={() => setSelectedRoom(room)}>
-									<div className="space-icon">{getRoomTypeLabel(room).slice(0, 1)}</div>
+									<div className="space-icon">{(room.buildingId).slice(0, 1)}</div>
 									<div className="space-copy">
 										<strong>{room.name}</strong>
 										<span>
