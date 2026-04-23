@@ -378,7 +378,7 @@
 	{
 		"roomId": "New College Courtyard",
 		"buildingId": "NEWCOLLEGE",
-		"roomType": "Lounge",
+		"roomType": "Courtyard",
 		"capacity": "N/A",
 		"name": "New College Courtyard",
 		"position": [43.77076264006865, -79.50206479949122],
@@ -387,7 +387,7 @@
 		"foodAllowed": false,
 		"description": "New College Courtyard.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "ccsc@yorku.ca",
+		"ownerEmail": "newcol@yorku.ca",
 		"otherContactInfo": [
 			{
 				"type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD."
@@ -408,7 +408,7 @@
 		"foodAllowed": false,
 		"description": "Atkinson Lounge.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "ccsc@yorku.ca",
+		"ownerEmail": "newcol@yorku.ca",
 		"otherContactInfo": [
 		
 		]
@@ -427,7 +427,7 @@
 		"foodAllowed": false,
 		"description": "The Loft.",
 		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-		"ownerEmail": "ccsc@yorku.ca",
+		"ownerEmail": "newcol@yorku.ca",
 		"otherContactInfo": [
 		
 		]
@@ -436,12 +436,186 @@
 
 
 
+		{	
+		"_comment": "===================================== Founders ========================================================================="
+		},
+
+
+
+	{
+		"roomId": "Founders Courtyard",
+		"buildingId": "FOUNDERS",
+		"roomType": "Courtyard",
+		"capacity": "N/A",
+		"name": "Founders Courtyard",
+		"position": [43.776038251784854, -79.50365018531255],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Founders Courtyard.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "founders@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Booking handled through TUUS student organization process." },
+			{
+				"type": "link",
+				"label": "TUUS Space and Equipment Info",
+				"url": "https://www.yorku.ca/tuus/reserving-space-equipment-registered-student-organizations/"
+			},
+			{
+				"type": "link",
+				"label": "TUUS Booking Form",
+				"url": "https://tuus.apps01.yorku.ca/machform_py/view.php?id=16918"
+			}
+
+		]
+
+	},
+
+
+
+	{
+		"roomId": "Room 015A",
+		"buildingId": "FOUNDERS",
+		"roomType": "Dining Room",
+		"capacity": "36",
+		"name": "Founders Dining Room",
+		"position": [43.77608444013527, -79.50344757477325],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Classroom style. Rectangular tables w/ chairs.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "founders@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+			, {"type": "text", "text": "This is only bookable during the summer term."}
+		]
+
+	},
+
+
+
+	{
+		"roomId": "Room 152",
+		"buildingId": "FOUNDERS",
+		"roomType": "Assembly Hall",
+		"capacity": "160-250",
+		"name": "Founders Assembly Hall",
+		"position": [43.77590820413416, -79.50298657960205],
+		"hours": "09:00AM-5:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Open room. Lots of space, small tables, chairs.",
+		"imageUrl": "/roomImages/FoundersAssemblyHall.png",
+		"ownerEmail": "founders@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
 
 
 
 
+	{
+		"roomId": "Room 303",
+		"buildingId": "FOUNDERS",
+		"roomType": "Committee Meeting Room",
+		"capacity": "30",
+		"name": "Brain Cragg Committee Room",
+		"position": [43.77614547780351, -79.50321889155168],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Boardroom Style (Rectangular tables with chairs.)",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "founders@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
 
 
+	{
+		"roomId": "Room 305",
+		"buildingId": "FOUNDERS",
+		"roomType": "Commons Room",
+		"capacity": "48-60",
+		"name": "Founders Senior Common Room",
+		"position": [43.77593417346852, -79.50335969253642],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Open study space.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "founders@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
+
+
+	{
+		"_comment": "===================================== Mclaughlin ========================================================================="
+	},
+
+
+	{
+		"roomId": "Room 014",
+		"buildingId": "MCLAUGHLIN",
+		"roomType": "Commons Room",
+		"capacity": "75",
+		"name": "Mclaughlin Junior Common Room",
+		"position": [43.77662827910622, -79.50260604900275],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Lecture style room",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "lapscolleges@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
+
+
+
+	{
+		"roomId": "Room 049",
+		"buildingId": "MCLAUGHLIN",
+		"roomType": "Multipurpose Room",
+		"capacity": "21",
+		"name": "Dining/Multipurpose Room",
+		"position": [43.77676160530492, -79.50267776151244],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "U-shaped room.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "lapscolleges@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
+
+	
+
+
+
+
+		{	
+		"_comment": "===================================== idk ========================================================================="
+		},
 
 
 
@@ -469,4 +643,5 @@
 		{	
 		"_comment": "===================================== idk ========================================================================="
 		}
+
 ]

@@ -23,5 +23,17 @@
 		"name": "New College",
 		"allowed": true,
 		"center": [43.77104838661764, -79.50249245923226]
+	},
+	{
+		"id": "FOUNDERS",
+		"name": "Founders College",
+		"allowed": true,
+		"center": [43.77600613395492, -79.50326895145703]
+	},
+	{
+		"id": "MCLAUGHLIN",
+		"name": "Mclaughlin College",
+		"allowed": true,
+		"center": [43.77662827910622, -79.50260604900275]
 	}
 ]
