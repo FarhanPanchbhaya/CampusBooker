@@ -153,7 +153,7 @@ export default function App() {
 					</p>
 				</div>
 				<div className="chip-row">
-					{["All", "Study", "Event", "Lab", "Studio", "Sport"].map((category) => (
+					{["All", "Commons Room", "Lounge", "Lab"].map((category) => (
 						<button type="button" key={category} className={`chip ${activeCategory === category ? "active" : ""}`} onClick={() => setActiveCategory(category)}>
 							{category === "All" ? "All Spaces" : category}
 						</button>

@@ -35,5 +35,17 @@
 		"name": "Mclaughlin College",
 		"allowed": true,
 		"center": [43.77662827910622, -79.50260604900275]
+	},
+	{
+		"id": "VANIER",
+		"name": "Vanier College",
+		"allowed": true,
+		"center": [43.775519813619646, -79.50222135729662]
+	},
+	{
+		"id": "OTHER",
+		"name": "Other",
+		"allowed": true,
+		"center": [43.77239803506958, -79.50549032078968]
 	}
 ]

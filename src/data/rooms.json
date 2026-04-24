@@ -54,7 +54,7 @@
 	{
 		"roomId": "Rooms 105, 105B",
 		"buildingId": "BETHUNE",
-		"roomType": "STUDY",
+		"roomType": "Study",
 		"capacity": "6-10",
 		"name": "Bethune Group Study Rooms",
 		"position": [43.77323920421867, -79.50898991301766],
@@ -78,7 +78,7 @@
 	{
 		"roomId": "Room 105A",
 		"buildingId": "BETHUNE",
-		"roomType": "STUDY",
+		"roomType": "Study",
 		"capacity": "2",
 		"name": "Bethune Piano Practice Room",
 		"position": [43.77330281515474, -79.50920262306862],
@@ -102,7 +102,7 @@
 		{
 		"roomId": "Room 203",
 		"buildingId": "BETHUNE",
-		"roomType": "STUDY",
+		"roomType": "Study",
 		"capacity": "40",
 		"name": "Norman's Seminar",
 		"position": [43.77336251515474, -79.50900062306862],
@@ -133,7 +133,7 @@
 		{
 		"roomId": "Room 320",
 		"buildingId": "BETHUNE",
-		"roomType": "STUDY",
+		"roomType": "Study",
 		"capacity": "75",
 		"name": "Gallery Lecture Style",
 		"position": [43.77306251515474, -79.50880062306862],
@@ -572,7 +572,7 @@
 		"roomType": "Commons Room",
 		"capacity": "75",
 		"name": "Mclaughlin Junior Common Room",
-		"position": [43.77662827910622, -79.50260604900275],
+		"position": [43.77674612342031, -79.50225988827069],
 		"hours": "09:00AM-6:00PM",
 		"accessibility": ["Data not available"],
 		"foodAllowed": false,
@@ -608,18 +608,148 @@
 
 	},
 
-	
+
+	{
+		"roomId": "Room 140",
+		"buildingId": "MCLAUGHLIN",
+		"roomType": "Commons Room",
+		"capacity": "34",
+		"name": "Senior Common Room",
+		"position": [43.77665703676143, -79.50255224905514],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Lounge style seating and tables set-up boardroom style.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "lapscolleges@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
 
 
 
+	{
+		"roomId": "Room 140",
+		"buildingId": "MCLAUGHLIN",
+		"roomType": "Courtyard",
+		"capacity": "N/A",
+		"name": "Mclaughlin Courtyard",
+		"position": [43.77691356401698, -79.50244298764454],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Courtyard near entrance of McLaughlin College & Residence.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "lapscolleges@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
+
+
+
+
+
+
+	{	
+		"_comment": "===================================== Vanier ========================================================================="
+	},
+
+
+	{
+		"roomId": "Room 001",
+		"buildingId": "VANIER",
+		"roomType": "Commons Room",
+		"capacity": "100",
+		"name": "Junior Common Room / The Renaissance",
+		"position": [43.77570225182536, -79.5021499177059],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Mix of tables and chairs and lounge type seating.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "lapscolleges@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
+
+	{
+		"roomId": "Room 010",
+		"buildingId": "VANIER",
+		"roomType": "Commons Room",
+		"capacity": "40",
+		"name": "Senior Common Room",
+		"position": [43.775464405360886, -79.5020643384809],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Lounge with non-standard seating.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "lapscolleges@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
+
+
+	{
+		"roomId": "Room 010",
+		"buildingId": "VANIER",
+		"roomType": "Courtyard",
+		"capacity": "N/A",
+		"name": "Vanier Courtyard",
+		"position": [43.77529196608774, -79.5025100712991],
+		"hours": "09:00AM-6:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Courtyard near entrance of Vanier College & Residence.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "lapscolleges@yorku.ca",
+		"otherContactInfo": [
+			{ "type": "text", "text": "Service Request (SR) is only required for events requiring a different room configuration, Registered Student Organizations (RSO) should submit a SR through SCLD." }
+
+		]
+
+	},
 
 		{	
-		"_comment": "===================================== idk ========================================================================="
+		"_comment": "===================================== Other ========================================================================="
 		},
 
 
 
+	{
+		"roomId": "Scott Library",
+		"buildingId": "OTHER",
+		"roomType": "Study",
+		"capacity": "N/A",
+		"name": "Study Rooms",
+		"position": [43.77239803506958, -79.50549032078968],
+		"hours": "08:00AM-11:00PM",
+		"accessibility": ["Data not available"],
+		"foodAllowed": false,
+		"description": "Small study rooms located in Scott Library. Bookable through the library website.",
+		"imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+		"ownerEmail": "N/A",
+		"otherContactInfo": [
+			{
+				"type": "link",
+				"label": "Scott Library Booking",
+				"url": "https://www.library.yorku.ca/web/ask-services/book-a-study-seatspace-at-the-libraries/"
+			}
+		]
 
+	},
 
 
 
@@ -641,7 +771,13 @@
 
 
 		{	
-		"_comment": "===================================== idk ========================================================================="
+		"_comment": "===================================== Other rooms ========================================================================="
 		}
+
+
+
+
+
+
 
 ]
